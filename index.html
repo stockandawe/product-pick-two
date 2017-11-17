@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Fast Good Cheap</title>
-    <meta name="description" content="You want a Fast, Good, and Cheap project?">
+    <title>Innovate Create Improve</title>
+    <meta name="description" content="Pick Two in product development: Innovate, Create, or Improve.">
 
     <style>
       * {
@@ -193,40 +193,25 @@
 
     </style>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@nannerb" />
-    <meta name="twitter:creator" content="@nannerb" />
-    <meta name="twitter:title" content="Fast Good Cheap" />
-    <meta name="twitter:description" content="You want a Fast, Good, and Cheap project?" />
-    <meta name="twitter:url" content="http://fastgood.cheap" />
-    <meta name="twitter:image" content="http://fastgood.cheap/postcard.png" />
-
-    <meta property="og:url" content="http://fastgood.cheap" />
-    <meta property="og:image" content="http://fastgood.cheap/postcard.png" />
-    <meta property="og:title" content="Fast Good Cheap" />
-    <meta property="og:description" content="You want a Fast, Good, and Cheap project?" />
-
-    <link rel="icon" type="image/png" href="http://fastgood.cheap/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="http://fastgood.cheap/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://fastgood.cheap/favicon-64x64.png" sizes="64x64">
+    <meta property="og:title" content="Innovate Create Improve" />
+    <meta property="og:description" content="Pick Two in product development: Innovate, Create, or Improve." />
   </head>
 
-	<body>
+  <body>
     <div class="container">
-      <input type="checkbox" id="fast" >
-      <label class="red" for="fast">INNOVATE</label>
+      <input type="checkbox" id="innovate" >
+      <label class="red" for="innovate">INNOVATE</label>
 
-      <input type="checkbox" id="good">
-      <label class="green" for="good">CREATE</label>
+      <input type="checkbox" id="create">
+      <label class="green" for="create">CREATE</label>
 
-      <input type="checkbox" id="cheap">
-      <label class="blue" for="cheap">IMPROVE</label>
+      <input type="checkbox" id="improve">
+      <label class="blue" for="improve">IMPROVE</label>
     </div>
     <script>
       var checked = [];
       [].forEach.call(document.querySelectorAll('input[type="checkbox"]'), function(checkbox) {
         checkbox.addEventListener('change', function(e) {
-          ga('send', 'event', 'checkbox', 'trigger');
           if ( checkbox.checked && checked.length === 2 ) {
             var uncheckTarget = checked[Math.floor(Math.random() * checked.length)];
             uncheckTarget.checked = false;
@@ -234,14 +219,6 @@
           checked = document.querySelectorAll('input[type="checkbox"]:checked');
         });
       });
-
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-91249744-1', 'auto');
-      ga('send', 'pageview');
     </script>
 	</body>
 
